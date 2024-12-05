@@ -1,0 +1,64 @@
+@inject CommentService CommentService
+
+<h3>Daftar Komentar</h3>
+
+<!-- Input pencarian -->
+<div class="input-group mb-3">
+    <input type="text" @bind="SearchText" placeholder="Cari komentar..." class="form-control" />
+    <button class="btn btn-primary" @onclick="SearchComments">Search</button>
+</div>
+
+<!-- Tabel komentar -->
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Isi Komentar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Comments == null)
+        {
+            <tr>
+                <td colspan="4">Memuat data...</td>
+            </tr>
+        }
+        else if (!Comments.Any())
+        {
+            <tr>
+                <td colspan="4">Tidak ada komentar ditemukan.</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var comment in Comments)
+            {
+                <tr>
+                    <td>@comment.Id</td>
+                    <td>@comment.Name</td>
+                    <td>@comment.Email</td>
+                    <td>@comment.Body</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<Comment> Comments;
+    private string SearchText = string.Empty;
+
+    // Memuat data awal
+    protected override async Task OnInitializedAsync()
+    {
+        Comments = await CommentService.GetCommentsAsync();
+    }
+
+    // Fungsi pencarian
+    private async Task SearchComments()
+    {
+        Comments = await CommentService.SearchCommentsAsync(SearchText);
+    }
+}
