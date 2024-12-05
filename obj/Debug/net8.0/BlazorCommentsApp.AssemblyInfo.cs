@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorCommentsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd3a9fa1f4ff28cc49af2ab9eab40e8692758af5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorCommentsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorCommentsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

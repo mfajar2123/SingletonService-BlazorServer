@@ -60,3 +60,4 @@ D:\Tes Magang\BlazorCommentsApp\obj\Debug\net8.0\refint\BlazorCommentsApp.dll
 D:\Tes Magang\BlazorCommentsApp\obj\Debug\net8.0\BlazorCommentsApp.pdb
 D:\Tes Magang\BlazorCommentsApp\obj\Debug\net8.0\BlazorCommentsApp.genruntimeconfig.cache
 D:\Tes Magang\BlazorCommentsApp\obj\Debug\net8.0\ref\BlazorCommentsApp.dll
+D:\Tes Magang\BlazorCommentsApp\obj\Debug\net8.0\BlazorCommentsApp.sourcelink.json
