@@ -1,5 +1,5 @@
 
-# ORM-ASP.NET
+# SinglentonService-BlazorServer
 
 Proyek ini merupakan implementasi sederhana Singleton Service pada Blazor Server.
 
